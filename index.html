@@ -81,14 +81,23 @@
           <div class="col-lg-12">
             <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s">
               <h1 class="ud-hero-title">
-                Upload File 
+                Input Tweets or Text 
               </h1>
               <ul class="ud-hero-buttons">
                 <div class="col-lg-12">
 
+                  <!--File upload
                   <label for="fileInput"> UPLOAD FILE </label>
                   <input type="file" class="form-control" id="fileInput" placeholder="file" name="fileInput">
+                  <label>OR </label>
+                  -->
 
+                  <!--link upload-->
+                  <form onSubmit={handleSubmit} className="form">
+                    <input ref={inputUrlRef} placeholder="Please Input Tweets here" className="form_input" type="text" />
+                  </form>
+                   <!--Upload Button-->
+                  <button type="submit" className="form_button">Upload</button>
                 </div>
               </ul>
             </div>
